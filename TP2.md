@@ -128,7 +128,10 @@ app.listen(port, (err) => {
 . Utilisation de la breadboard : 
 ![](images/breadboard.png)
 
-. Réalisez ce montage : 
+. Réalisez ce montage :  
+_Pour empêcher que la LED demande trop de courant au raspberry, on ajoute une résistance de 330 Ohms. Rappel du lycée, la loi d'Ohm : U = R * I. Pour fonctionner correctement notre LED a besoin de 10 mA, nous avons donc R(330) * I(0,010) = 3,3V, ce qui correspond à la tension envoyée par le raspberry_  
+
+_Pour identifier la resistance, regardez les couleurs dessus, la 330 Ohm a les couleurs Orange, Orange, Marron_
 ![](images/led-circuit.png)
 
 . Dans un nouveau dossier `led` dans le dossier de votre binôme et installez `onoff` (un utilitaire node pour contrôler les GPIOs) et `sleep` (utilitaire node pour bloquer l'exécution d'un script) : 
@@ -186,7 +189,7 @@ $ node server.js
 
 . Une fois que votre serveur fonctionne, modifier `server.js` pour ajouter deux URLs : `/on` et `/off` qui respectivement allume et éteigne une LED.  
 
-Vu que notre serveur ne se termine pas comme un script, on va intercepter la fin du processus (quand on utilise Ctrl-C pour quitter notre serveur par exemple) pour indiquer au système qu'on utilise plus les pins GPIOs. Ajoutez à la fin du fichier `server.js` :
+Vu que notre serveur ne se termine pas comme un script, on va intercepter la fin du processus (quand on utilise Ctrl-C pour quitter notre serveur par exemple) pour indiquer au système qu'on utilise plus les pins GPIOs.joutez à la fin du fichier `server.js` :
 
 ```js
 process.on('SIGINT', () => {
