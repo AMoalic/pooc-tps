@@ -22,7 +22,7 @@ _Cette commande devrait vous afficher un dossier commençant par 28-XXXXXX (les 
 - Visualisez les données remontées par le capteur avec la commande : 
 
 ```
-$ cat /sys/bus/w1/devices/28-XXXXXXXX/w1-slave
+$ cat /sys/bus/w1/devices/28-XXXXXXXX/w1_slave
 ```
 _Remplacez les X par ce que vous avez eu lors de la précédente commande._  
 - Vous devriez avoir comme résultat quelque chose de ce type : 
