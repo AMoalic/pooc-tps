@@ -6,10 +6,10 @@ _infos pratiques_ : tous les raspberry ont pour login `pi` et pour mot de passe 
 ------------------------------------
 _ne démarrez pas votre raspberry tout de suite, réalisez le montage avec le raspberry éteind._  
 
-. Réalisez ce montage : (**sans les LEDs ni le buzzer**)
-###Pour le capteur de température, faites bien attention aux couleurs des fils
+. Réalisez ce montage : (**sans les LEDs ni le buzzer**)  
+**Pour le capteur de température, faites bien attention aux couleurs des fils**  
 *la résistance qui va intervenir pour le capteur de température est une résitstance de 4,7 kOhm, c'est celle qui est différente des deux autres, elle porte les couleurs Jaune, Violet, Rouge*
-![](images/temp sensor.png)
+![](images/temp_sensor.png)
 . Pour vérifier que votre montage correspondant au capteur de température est correcte, nous allons vérifier que le système reconnait bien notre capteur :  
 - Démarrez le raspberry  
 - Connectez-vous au raspberry  
